@@ -4,7 +4,7 @@
       TudaLoo MothaFuhckass
     </ion-title>
     <ion-buttons end>
-      <button ion-buttons (click)="openTodoAlert()">
+      <button ion-button (click)="openTodoAlert()">
         <ion-icon name="add"></ion-icon>
       </button>
     </ion-buttons>
@@ -12,7 +12,7 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
+  <ion-list reorder="true">
     <ion-item-sliding *ngFor="let todo of todos">
         <ion-item>{{todo}}</ion-item>
 
